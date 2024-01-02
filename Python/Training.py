@@ -45,26 +45,26 @@ LABEL_COLUMN= "Mental Disorder"
 
 
 
-df_HARD = pd.read_csv("dataset.csv" )
+df = pd.read_csv("dataset.csv" )
 
-df_HARD = df_HARD[["Column1","Column2"]]  # we are interested in rating and review only
-df_HARD.columns = [DATA_COLUMN, LABEL_COLUMN]
-print(df_HARD[LABEL_COLUMN].value_counts())
+df = df[["Column1","Column2"]]  # we are interested in rating and review only
+df.columns = [DATA_COLUMN, LABEL_COLUMN]
+print(df[LABEL_COLUMN].value_counts())
 # code rating as +ve if > 3, -ve if less, no 3s in dataset
 
-hard_map = {
+mmap = {
     5: 'PTSD',
     4: 'OCD',
     3: 'Depression',
     2: 'AS'
 }
 
-df_HARD[LABEL_COLUMN] = df_HARD[LABEL_COLUMN].apply(lambda x: hard_map[x])
-train_HARD, test_HARD = train_test_split(df_HARD, test_size=0.2, random_state=42)
-label_list_HARD = ['PTSD', 'OCD','Depression',"AS"]
+df[LABEL_COLUMN] = df[LABEL_COLUMN].apply(lambda x: mmap[x])
+traint, testt = train_test_split(df, test_size=0.2, random_state=42)
+label_list = ['PTSD', 'OCD','Depression',"AS"]
 
-data_Hard = Dataset("data", train_HARD, test_HARD, label_list_HARD)
-all_datasets.append(data_Hard)
+data = Dataset("data", traint, testt, label_list)
+all_datasets.append(data)
 
 
 
@@ -93,7 +93,7 @@ for x in all_datasets:
 dataset_name = 'data'
 model_name = 'aubmindlab/bert-base-arabertv02'
 task_name = 'classification'
-max_len = 400
+max_len = 512
 
 for d in all_datasets:
   if d.name==dataset_name:
