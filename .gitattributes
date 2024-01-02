@@ -12,3 +12,6 @@ CHANGELOG.md export-ignore
 
 *.js linguist-detectable=false
 *.py linguist-detectable=true
+*.php linguist-detectable=false
+*.blade linguist-detectable=false
+*.css linguist-detectable=false
