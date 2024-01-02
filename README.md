@@ -27,6 +27,18 @@ Before you begin, ensure you have met the following requirements:
 - You have a `<Windows/Linux/Mac>` machine. State which OS is supported/required.
 - You have read `<guide/link/documentation_related_to_project>`.
 
+## Setting up Laravel
+
+- Clone the repo and cd into it
+- In your terminal composer install
+- Rename or copy .env.example file to .env
+- php artisan key:generate
+- Set your database credentials in your .env file
+- npm install
+- npm run watch
+- run command[laravel file manager]:- php artisan storage:link
+-run php artisan serve
+
 ## Project Details
 
 The project involved several steps to ensure the model was trained effectively and accurately. Here's a summary of the work done:
