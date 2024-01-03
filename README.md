@@ -43,6 +43,12 @@ Before you begin, ensure you have met the following requirements:
 
 The project involved several steps to ensure the model was trained effectively and accurately. Here's a summary of the work done:
 
+### Data Collection and Validation
+
+The dataset was meticulously assembled from a diverse range of sources and websites. This comprehensive collection process ensured a rich variety of data, enhancing the robustness of our model. To cater to our Arabic-speaking audience, the data was then translated into Arabic.
+
+To uphold the highest standards of accuracy, the translated dataset underwent a rigorous validation process. Medical professionals, with their extensive knowledge and expertise, meticulously reviewed the data. Their approval served as a testament to the validity and reliability of our dataset.
+
 ### Data Preprocessing
 
 The dataset consisted of 40,000 rows with two columns. One column contained the user's story and daily life, averaging around 500 words each. The other column contained the disease name, which was mapped to one of four numbers. The data was preprocessed to be usable for the model.
