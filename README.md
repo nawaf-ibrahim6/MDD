@@ -131,7 +131,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 This project would not have been possible without the help and support of several individuals. I would like to express my deepest appreciation to:
 
 - https://github.com/HadoolMohamma : My project partner who worked alongside me on the Natural Language Processing section of this project. You can find more about their work here.
-- Ali Asfour: My project partner who worked on the web development section of this project.
+- assfourali98@gmail.com: My project partner who worked on the web development section of this project.
 
 
 
